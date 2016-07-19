@@ -11,7 +11,7 @@ convoy-nfs:
     - /run:/host/run
     - /etc/docker/plugins:/etc/docker/plugins
   image: chrisurwin/convoy-agent
-  command: volume-agent-nfs
+  command: volume-agent-efs
 
 convoy-nfs-storagepool:
   labels:
