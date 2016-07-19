@@ -23,7 +23,7 @@
        type: "string"
        required: true
 
-convoy-efs:
+convoy-nfs:
     metadata:
         efs_id: "${EFS_ID}"
         mount_dir: "${MOUNT_DIR}"
@@ -37,7 +37,7 @@ convoy-efs:
         unhealthy_threshold: 3
         healthy_threshold: 2
 
-convoy-efs-storagepool:
+convoy-nfs-storagepool:
     metadata:
         efs_id: "${EFS_ID}"
         mount_dir: "${MOUNT_DIR}"
