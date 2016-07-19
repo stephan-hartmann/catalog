@@ -37,7 +37,7 @@ convoy-nfs:
 
 convoy-nfs-storagepool:
     metadata:
-        aws_wfs: "${AWS_EFS}"
+        aws_efs: "${AWS_EFS}"
         nfs_server: "${NFS_SERVER}"
         mount_dir: "${MOUNT_DIR}"
     scale: 1
