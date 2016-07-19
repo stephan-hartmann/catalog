@@ -1,5 +1,5 @@
-name: Convoy NFS
+name: Convoy EFS
 description: |
-  Docker Volume Manager for NFS-backed Volumes
-version: v0.4.0
+  Docker Volume Manager for AWS EFS-backed Volumes
+version: v0.1.0
 category: Rancher Services
