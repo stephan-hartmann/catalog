@@ -1,4 +1,4 @@
-convoy-efs:
+convoy-nfs:
   labels:
     io.rancher.container.create_agent: 'true'
     io.rancher.scheduler.global: 'true'
@@ -13,7 +13,7 @@ convoy-efs:
   image: chrisurwin/convoy-agent
   command: volume-agent-efs
 
-convoy-efs-storagepool:
+convoy-nfs-storagepool:
   labels:
     io.rancher.container.create_agent: 'true'
   image: chrisurwin/convoy-agent
