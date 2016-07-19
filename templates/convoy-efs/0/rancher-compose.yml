@@ -3,6 +3,11 @@
     version: "v0.1.0"
     description: "Convoy EFS - Docker volume plugin"
     questions:
+     - variable: "EFS_ID"
+       description: "FS ID of AWS EFS"
+       label: "EFS ID"
+       required: true
+       type: "string"
      - variable: "AWS_REGION"
        description: "AWS Region"
        label: "AWS Region"
@@ -12,11 +17,6 @@
          - eu-west-1
          - us-east-1
          - us-west-2
-     - variable: "EFS_ID"
-       description: "FS ID of AWS EFS"
-       label: "EFS ID"
-       required: true
-       type: "string"
      - variable: "MOUNT_DIR"
        label: "Mount Directory"
        description: "The directory on the EFS server to mount"
