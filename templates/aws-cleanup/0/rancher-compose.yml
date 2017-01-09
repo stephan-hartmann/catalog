@@ -3,21 +3,6 @@
     version: "v0.1.0"
     description: "AWS Host Cleanup"
     questions:
-     - variable: "CATTLE_URL"
-       description: "URL of the Rancher Server"
-       label: "URL"
-       required: true
-       type: "string"
-     - variable: "CATTLE_ACCESS_KEY"
-       description: "Rancher Access Key"
-       label: "Access Key"
-       required: true
-       type: "string"
-     - variable: "CATTLE_SECRET_KEY"
-       description: "Rancher Secret Key"
-       label: "Secret Key"
-       required: true
-       type: "string"
      - variable: "AWS_ACCESS_KEY_ID"
        description: "AWS Access Key"
        label: "AWS Access Key"
