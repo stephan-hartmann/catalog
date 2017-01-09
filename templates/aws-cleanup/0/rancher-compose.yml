@@ -1,0 +1,46 @@
+.catalog:
+    name: "AWS Host Cleanup"
+    version: "v0.1.0"
+    description: "AWS Host Cleanup"
+    questions:
+     - variable: "CATTLE_URL"
+       description: "URL of the Rancher Server"
+       label: "URL"
+       required: true
+       type: "string"
+     - variable: "CATTLE_ACCESS_KEY"
+       description: "Rancher Access Key"
+       label: "Access Key"
+       required: true
+       type: "string"
+     - variable: "CATTLE_SECRET_KEY"
+       description: "Rancher Secret Key"
+       label: "Secret Key"
+       required: true
+       type: "string"
+     - variable: "AWS_ACCESS_KEY_ID"
+       description: "AWS Access Key"
+       label: "AWS Access Key"
+       required: true
+       type: "string"
+     - variable: "AWS_SECRET_ACCESS_KEY"
+       description: "AWS Secret Key"
+       label: "Access Secret"
+       required: true
+       type: "string" 
+
+rancher-reaper:
+    metadata:
+        CATTLE_URL: "${CATTLE_URL}"
+        CATTLE_ACCESS_KEY: "${CATTLE_ACCESS_KEY}"
+        CATTLE_SECRET_KEY: "${CATTLE_SECRET_KEY}"
+        AWS_ACCESS_KEY_ID: "$AWS_ACCESS_KEY_ID}"
+        AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+    health_check:
+        port: 3000
+        interval: 2000
+        unhealthy_threshold: 3
+        strategy: recreate
+        response_timeout: 2000
+        request_line: GET / HTTP/1.0
+        healthy_threshold: 2
