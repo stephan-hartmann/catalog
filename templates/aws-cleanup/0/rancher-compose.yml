@@ -14,9 +14,9 @@
        required: true
        type: "string" 
 
-rancher-reaper:
+rancher-aws-host-cleanup:
     health_check:
-        port: 3000
+        port: 7777
         interval: 2000
         unhealthy_threshold: 3
         strategy: recreate

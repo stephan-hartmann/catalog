@@ -1,4 +1,4 @@
-rancher-reaper:
+rancher-aws-host-cleanup:
   image: chrisurwin/rancher-aws-host-cleanup:latest
   tty: true
   environment:
