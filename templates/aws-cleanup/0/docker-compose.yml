@@ -1,5 +1,5 @@
 rancher-reaper:
-  image: ampedandwired/rancher-reaper:latest
+  image: chrisurwin/rancher-aws-host-cleanup:latest
   tty: true
   environment:
     AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
