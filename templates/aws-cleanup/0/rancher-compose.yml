@@ -13,13 +13,3 @@
        label: "Access Secret"
        required: true
        type: "string" 
-
-rancher-aws-host-cleanup:
-    health_check:
-        port: 7777
-        interval: 2000
-        unhealthy_threshold: 3
-        strategy: recreate
-        response_timeout: 2000
-        request_line: GET / HTTP/1.0
-        healthy_threshold: 2
