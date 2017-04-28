@@ -3,4 +3,3 @@ description: |
   Rebalances containers of a services across multiple hosts to improve service availability
 version: v0.1.0
 category: Rancher Services
-minimum_rancher_version: v1.5.5
