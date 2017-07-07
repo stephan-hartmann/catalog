@@ -13,6 +13,7 @@
          - IN
          - OUT
        required: true
+       default: IN
      - variable: "OPERATING_MODE"
        description: "Operating Mode"
        label: "Operating Mode"
@@ -22,6 +23,7 @@
          - DEFAULT
          - AGGRESSIVE
        required: true
+       default: DEFAULT
  
 rancher-rebalancer:
     health_check:
