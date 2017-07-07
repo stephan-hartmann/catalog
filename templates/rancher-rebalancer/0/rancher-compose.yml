@@ -24,9 +24,6 @@
        required: true
  
 rancher-rebalancer:
-    metadata:
-        mode: "${OPERATING_MODE}"
-        opt: "${OPTION_MODE}"
     health_check:
         port: 9777
         interval: 2000
