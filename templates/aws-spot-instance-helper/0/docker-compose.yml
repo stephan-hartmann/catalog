@@ -1,0 +1,7 @@
+rancher-rebalancer:
+  image: chrisurwin/aws-spot-instance-helper:latest
+  tty: true
+  labels:
+    io.rancher.container.create_agent: 'true'
+    io.rancher.container.agent.role: environment
+    io.rancher.container.pull_image: always
