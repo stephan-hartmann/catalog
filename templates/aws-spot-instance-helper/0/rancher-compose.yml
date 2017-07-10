@@ -5,7 +5,7 @@
     minimum_rancher_version: v1.5.5
 
  
-rancher-rebalancer:
+aws-spot-instance-helper:
     health_check:
         port: 9777
         interval: 2000

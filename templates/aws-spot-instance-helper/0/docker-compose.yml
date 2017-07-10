@@ -1,4 +1,4 @@
-rancher-rebalancer:
+aws-spot-instance-helper:
   image: chrisurwin/aws-spot-instance-helper:latest
   tty: true
   labels:
