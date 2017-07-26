@@ -1,0 +1,15 @@
+.catalog:
+    name: "Low Disk Space Remover"
+    version: "v0.1.0"
+    description: "Low Disk Space Remover"
+    questions:
+     - variable: "AWS_ACCESS_KEY_ID"
+       description: "AWS Access Key"
+       label: "AWS Access Key"
+       required: true
+       type: "string"
+     - variable: "AWS_SECRET_ACCESS_KEY"
+       description: "AWS Secret Key"
+       label: "Access Secret"
+       required: true
+       type: "string" 
