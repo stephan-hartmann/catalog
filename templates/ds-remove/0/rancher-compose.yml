@@ -13,3 +13,8 @@
        label: "Access Secret"
        required: true
        type: "string" 
+     - variable: "ARN"
+       description: "AWS ARN"
+       label: "ARN"
+       required: false
+       type: "string" 
