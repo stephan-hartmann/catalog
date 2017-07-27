@@ -1,7 +1,9 @@
-# Rancher AWS host cleanup
+# Disk Space Monitor
 
 ### Info
 This template contains a single alpine based image that runs a check on disk space every minute.
+
+If the host is running low on disk space it will first attempt to evacuate all of the containers to other hosts. If this fails to free up enough disk space then it will attempt to terminate the host.
 
 An AWS key and secret are required with permissions to describe instances and terminate instances in order for it to validate the host status or remove it.
 

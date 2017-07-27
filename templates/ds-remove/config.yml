@@ -1,5 +1,5 @@
-name: AWS cleanup
+name: Disk Space remover
 description: |
-  AWS clean up for discarded Rancher Hosts
+  Automatically evacuate and terminate a host with no disk space
 version: v0.1.0
 category: Rancher Services
