@@ -1,0 +1,5 @@
+aws-spot-instance-helper:
+  image: chrisurwin/autospotting:v0.1.0
+  tty: true
+  labels:
+    io.rancher.container.pull_image: always
