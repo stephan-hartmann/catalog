@@ -1,0 +1,36 @@
+.catalog:
+    name: "Rancher Rebalancer"
+    version: "v0.1.0"
+    description: "Rancher Rebalancer"
+    minimum_rancher_version: v1.5.5
+    questions:
+     - variable: "OPTION_MODE"
+       description: "Opt in or out"
+       label: "Option Mode"
+       required: true
+       type: enum
+       options:
+         - IN
+         - OUT
+       required: true
+       default: IN
+     - variable: "OPERATING_MODE"
+       description: "Operating Mode"
+       label: "Operating Mode"
+       required: true
+       type: enum
+       options:
+         - DEFAULT
+         - AGGRESSIVE
+       required: true
+       default: DEFAULT
+ 
+rancher-rebalancer:
+    health_check:
+        port: 9777
+        interval: 2000
+        unhealthy_threshold: 3
+        strategy: recreate
+        response_timeout: 2000
+        request_line: GET /ping HTTP/1.0
+        healthy_threshold: 2
