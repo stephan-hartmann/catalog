@@ -6,7 +6,7 @@ jenkins:
     io.rancher.container.agent.role: environment
   ports:
     - 8000:8080
-  image: metamesh/rancher-jenkins:1
+  image: metamesh/rancher-jenkins
   tty: true
   stdin_open: true
   volumes:
