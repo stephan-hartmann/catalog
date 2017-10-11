@@ -7,7 +7,7 @@ jenkins:
   ports:
     - 8000:8080
 #  image: metamesh/rancher-jenkins:4
-  image: cloudssky/jenkins-csg
+  image: cloudssky/jenkins-csg:latest
   tty: true
   stdin_open: true
   volumes:
